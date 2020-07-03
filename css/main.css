@@ -1,0 +1,223 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #4c4e61;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+p,
+label {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button {
+  cursor: pointer;
+  padding: 0;
+  white-space: nowrap;
+}
+textarea,
+button,
+input {
+  outline: none !important;
+  border: none;
+}
+.cards {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 85px 33px;
+  background-color: #fafafa;
+}
+@media (min-width: 768px) {
+  .cards {
+    max-width: 768px;
+    padding: 0 30px 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .cards {
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.cards h1 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+@media (min-width: 1440px) {
+  .cards h1 {
+    font-size: 36px;
+    letter-spacing: initial;
+    margin-bottom: 0;
+  }
+}
+.cards h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+@media (min-width: 1440px) {
+  .cards h2 {
+    font-size: 37px;
+  }
+}
+.cards p {
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 76px;
+}
+@media (min-width: 1440px) {
+  .cards p {
+    max-width: 500px;
+    margin: 0 auto 65px;
+  }
+}
+@media (min-width: 1440px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1109px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .cards .cards__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media (min-width: 1440px) {
+  .cards .cards__items {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}
+.cards .cards__items .card {
+  position: relative;
+  padding: 30px 25px 92px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px 1px #a3a5ae;
+          box-shadow: 0 5px 15px 1px #a3a5ae;
+  margin-bottom: 21px;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  .cards .cards__items .card {
+    max-width: 45%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .cards .cards__items .card {
+    max-width: initial;
+  }
+}
+.cards .cards__items .card.cyan {
+  border-top: 5px solid #45d3d3;
+}
+@media (min-width: 1440px) {
+  .cards .cards__items .card.cyan {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}
+.cards .cards__items .card.red {
+  border-top: 5px solid #ea5353;
+}
+@media (min-width: 1440px) {
+  .cards .cards__items .card.red {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+.cards .cards__items .card.orange {
+  border-top: 5px solid #fcaf4a;
+}
+@media (min-width: 1440px) {
+  .cards .cards__items .card.orange {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+}
+.cards .cards__items .card.blue {
+  border-top: 5px solid #549ef2;
+}
+@media (min-width: 1440px) {
+  .cards .cards__items .card.blue {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}
+.cards .cards__items .card h3 {
+  margin-bottom: 6px;
+}
+.cards .cards__items .card p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.cards .cards__items .card img {
+  position: absolute;
+  right: 27px;
+  bottom: 27px;
+  max-width: 55px;
+}
+/*# sourceMappingURL=main.css.map */
