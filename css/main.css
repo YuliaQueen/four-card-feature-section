@@ -155,12 +155,12 @@ input {
 @media (min-width: 768px) {
   .cards .cards__items .card {
     max-width: 45%;
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1440px) {
   .cards .cards__items .card {
     max-width: initial;
+    margin-bottom: 0;
   }
 }
 .cards .cards__items .card.cyan {
